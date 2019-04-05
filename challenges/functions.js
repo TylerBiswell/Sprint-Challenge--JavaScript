@@ -39,7 +39,7 @@ const greeting = function(x, y){
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: All functions have access to the global scope and the scope that is above them or that they are nested in. Since its nested in the parent function it has access to the variable
 
 
 const external = "I'm outside the function";
