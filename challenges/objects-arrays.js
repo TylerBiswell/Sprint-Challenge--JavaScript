@@ -86,7 +86,7 @@ const sortUniveristies = universities.sort(function (a, b) {
       else if (a > b) return 1;
       return 0;
 });
-console.log(universities)
+console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -94,12 +94,18 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
+const contactInfo = ["Cynde ctorry0@macromedia.com", "Saundra swhal1@state.gov", "Lambert lparham2@techcrunch.com", "Modestine mdolder3@symantec.com", "Chick camorts4@google.com.au", "Jakob jharken5@spiegel.de", "Robbi rbrister6@redcross.org", "Colline cbrosh7@alibaba.com", "Michail mrome8@shinystat.com", "Hube hlethbrig9@foxnews.com"];
 console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
+function filterItems (arr, query){
+  return arr.filter(function(el) {
+    return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+})
+}
+// console.log(filterItems(universities, 'Uni'));
+const uni = ["Coastal Carolina University", "International Medical & Technological University", "Salem University", "Universidad Católica de Ávila", "Universitat Rovira I Virgili Tarragona"];
 console.log(uni);
 
 
